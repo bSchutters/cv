@@ -37,6 +37,14 @@
   font-display: swap;
 }
 
+.color-pink {
+  color: pink;
+}
+
+.color-green {
+  color: lightgreen;
+}
+
 body {
   background-color: #161616;
   color: #eee9db;
