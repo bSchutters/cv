@@ -1,0 +1,105 @@
+/* #1E1B1E */
+@font-face {
+  font-family: "TG";
+  src: url("../fonts/TypoGroteskRegular.woff2") format("woff2"),
+    url("../fonts/TypoGroteskRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TG Black";
+  src: url("../fonts/TypoGroteskRegular.woff2") format("woff2"),
+    url("../fonts/TypoGroteskRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TG Bold";
+  src: url("../fonts/TypoGroteskBold.woff2") format("woff2"),
+    url("../fonts/TypoGroteskBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sk";
+  src: url("../fonts/Sk-Modernist-Regular.woff2") format("woff2"),
+    url("../fonts/Sk-Modernist-Regular.woff") format("woff"),
+    url("../fonts/Sk-Modernist-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+div.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) repeat(6, 0.5fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+section.hire {
+  grid-area: 1 / 1 / 4 / 4;
+  background-color: red;
+}
+section.header {
+  grid-area: 1 / 4 / 2 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e1b1e;
+  border-radius: 20px;
+  padding: 30px;
+  font-family: TG Bold;
+}
+section.image {
+  grid-area: 2 / 4 / 6 / 7;
+  background-color: aquamarine;
+}
+section.stats {
+  grid-area: 4 / 1 / 6 / 4;
+  background-color: blue;
+}
+section.name {
+  grid-area: 2 / 7 / 3 / 10;
+  background-color: brown;
+}
+section.location {
+  grid-area: 3 / 7 / 5 / 10;
+  background-color: blueviolet;
+}
+section.social {
+  grid-area: 5 / 7 / 6 / 10;
+  background-color: yellowgreen;
+}
+section.skills {
+  grid-area: 6 / 1 / 8 / 4;
+  background-color: tomato;
+}
+section.about {
+  grid-area: 6 / 4 / 8 / 10;
+  background-color: teal;
+}
+
+section.header svg {
+  fill: white;
+  width: 30px;
+}
