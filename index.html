@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <title>Curiculum Vitae</title>
-
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
     <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <title>Curiculum Vitae</title>
   </head>
   <body>
     <div class="grid-container">
@@ -57,11 +54,9 @@
       <section class="location">
         <div class="loc-text">
           <p>Based in:</p>
-          <p>Bruxelles</p>
+          <p>Bruxelles, Belgium</p>
         </div>
-        <div id="loc-image">
-          <img src="./assets/bxl-test.png" alt="" />
-        </div>
+        <div id="loc-image"></div>
       </section>
 
       <section class="stats">
@@ -81,30 +76,30 @@
 
       <section class="social">
         <div id="icon-insta" class="icons">
-          <a target="_blank" href="https://www.instagram.com/bryanschttrs/"
-            ><box-icon size="45px" type="logo" name="instagram-alt"></box-icon
-          ></a>
+          <a target="_blank" href="https://www.instagram.com/bryanschttrs/">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
         </div>
         <div id="icon-github" class="icons">
           <a target="_blank" href="https://github.com/bschutters">
-            <box-icon size="45px" type="logo" name="github"></box-icon
-          ></a>
+            <i class="bx bxl-github"></i>
+          </a>
         </div>
         <div id="icon-discord" class="icons">
           <a
             target="_blank"
             href="https://discordapp.com/users/168126553727827969"
           >
-            <box-icon size="45px" type="logo" name="discord"></box-icon
-          ></a>
+            <i class="bx bxl-discord"></i>
+          </a>
         </div>
         <div id="icon-linkedin" class="icons">
           <a
             target="_blank"
             href="https://www.linkedin.com/in/bryan-schutters-1479151b6/"
           >
-            <box-icon size="45px" type="logo" name="linkedin-square"></box-icon
-          ></a>
+            <i class="bx bxl-linkedin"></i>
+          </a>
         </div>
       </section>
 
@@ -127,46 +122,38 @@
         <h1>Skills</h1>
         <div class="stack-tech">
           <div id="icon-tailwind" class="icons-tech">
-            <box-icon type="logo" name="tailwind-css"></box-icon>
+            <i class="bx bxl-tailwind-css"></i>
           </div>
 
           <div id="icon-react" class="icons-tech">
-            <box-icon name="react" type="logo"></box-icon>
+            <i class="bx bxl-react"></i>
           </div>
 
           <div id="icon-ts" class="icons-tech">
-            <box-icon type="logo" name="typescript"></box-icon>
+            <i class="bx bxl-typescript"></i>
           </div>
 
           <div id="icon-adobe" class="icons-tech">
-            <box-icon name="adobe" type="logo"></box-icon>
+            <i class="bx bxl-adobe"></i>
           </div>
 
           <div id="icon-figma" class="icons-tech">
-            <box-icon name="figma" type="logo"></box-icon>
+            <i class="bx bxl-figma"></i>
           </div>
 
           <div id="icon-css" class="icons-tech">
-            <box-icon name="css3" type="logo"></box-icon>
+            <i class="bx bxl-css3"></i>
           </div>
 
           <div id="icon-html" class="icons-tech">
-            <box-icon name="html5" type="logo"></box-icon>
+            <i class="bx bxl-html5"></i>
           </div>
 
           <div id="icon-js" class="icons-tech">
-            <box-icon type="logo" name="javascript"></box-icon>
+            <i class="bx bxl-javascript"></i>
           </div>
         </div>
       </section>
     </div>
-    <script>
-      mapboxgl.accessToken =
-        "pk.eyJ1IjoiYnJ5YW4tY2YybSIsImEiOiJjbG4zY2U3aXgwaHlrMm1waDF2MGM3NW9jIn0.NtXre5zcGh2d5kanxZ9V1A";
-      var map = new mapboxgl.Map({
-        container: "map",
-        style: "mapbox://styles/mapbox/streets-v11",
-      });
-    </script>
   </body>
 </html>
